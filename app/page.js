@@ -42,6 +42,7 @@ export default function Home() {
         },
         (error) => {
           setStatus('Failed to send message. Please try again later.');
+          setFormData({ name: '', email: '', message: '' });
         }
       );
   };
@@ -50,19 +51,19 @@ export default function Home() {
   const projects = [
     {
       title: "Eschool",
-      description: "eSchool is an innovative online education platform designed to make learning accessible and interactive. Whether you're a student, teacher, or professional, eSchool offers a seamless experience with a user-friendly interface, engaging course materials, and real-time collaboration tools. From video lectures to quizzes and assignments, eSchool empowers learners to achieve their goals at their own pace. Elevate your education with eSchool today!",
+      description: "Eschool static website is a comprehensive educational platform.",
       image: "/E School.jpg",
       link: "https://forhad2k.github.io/project1/",
     },
     {
-      title: "Project 2",
+      title: "Dua Page",
       description: "A mobile app designed with modern UI.",
       image: "/dua page.png",
       link: "https://my-dua.netlify.app/", // Replace with actual link
     },
     {
-      title: "Project 3",
-      description: "An e-commerce platform with robust features.",
+      title: "Editor Cloud",
+      description: "An Post-Production platform with robust features.",
       image: "/Editor cloud.png",
       link: "https://editor-cloud.netlify.app/", // Replace with actual link
     },
